@@ -1,0 +1,14 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+.hero {
+  background: linear-gradient(to right, #1a1a2e, #16213e);
+  padding: 100px 0;
+}
+.btn-primary {
+  background-color: #ff6f61;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #e65b50;
+}
