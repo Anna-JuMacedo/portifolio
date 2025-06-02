@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viagens Incríveis</title>
+
+    <!-- Link para o CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .hero {
+            background-image: url('https://www.voetranquilo.com/wp-content/uploads/2021/06/15-melhores-destinos-para-uma-viagem-em-familia-scaled.jpg'); /* imagem de fundo */
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Viagens Incríveis</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#destinos">Destinos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção Hero -->
+    <div class="hero">
+        <h1>Explore o Mundo</h1>
+        <p>Encontre os destinos mais incríveis para sua próxima viagem.</p>
+        <a href="#destinos" class="btn btn-primary btn-lg">Veja os Destinos</a>
+    </div>
+
+    <!-- Seção de Destinos -->
+    <div class="container my-5" id="destinos">
+        <h2 class="text-center mb-4">Destinos Populares</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://a.cdn-hotels.com/gdcs/production184/d1098/f738af60-a4a3-4375-9ed6-d6b8d4cf5601.jpg" class="card-img-top" alt="Paris">
+                    <div class="card-body">
+                        <h5 class="card-title">Praias</h5>
+                        <p class="card-text">As praias são destinos ideais para quem busca relaxamento, aventura ou simplesmente um lugar paradisíaco para apreciar a beleza natural..</p>
+                        <a href="praia1.html" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://th.bing.com/th/id/OIP.2PdPrGNByJbbgcWrMw64EQHaE8?rs=1&pid=ImgDetMain" class="card-img-top" alt="New York">
+                    <div class="card-body">
+                        <h5 class="card-title">Capitais</h5>
+                        <p class="card-text">As capitais são o coração pulsante de um país, combinando história, cultura, arte, gastronomia e, muitas vezes, a energia vibrante da vida urbana.</p>
+                        <a href="capitais1.html" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://www.fodors.com/wp-content/uploads/2020/04/11_UltimateTokyofromHome__HERO_jezael-melgoza-_noSmX8Kgoo-unsplash.jpg" class="card-img-top" alt="Tokyo">
+                    <div class="card-body">
+                        <h5 class="card-title">Cidades Históricas</h5>
+                        <p class="card-text">As capitais são os centros políticos, econômicos e culturais dos países, e muitas delas possuem características únicas que as tornam destinos fascinantes para quem gosta de viajar.</p>
+                        <a href="cidades1.html" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção de Contato -->
+    <div class="container my-5" id="contato">
+        <h2 class="text-center mb-4">Entre em Contato</h2>
+        <form>
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Seu email">
+            </div>
+            <div class="mb-3">
+                <label for="mensagem" class="form-label">Mensagem</label>
+                <textarea class="form-control" id="mensagem" rows="3" placeholder="Sua mensagem"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Viagens Incríveis. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Scripts do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
